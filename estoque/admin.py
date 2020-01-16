@@ -1,3 +1,11 @@
 from django.contrib import admin
+from .models import EstoqueItens
 
-# Register your models here.
+
+@admin.register(EstoqueItens)
+class EstoqueAdmin(admin.ModelAdmin):
+    list_display = (
+        '__str__',
+        'qtd',
+        'sd',
+        )

@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Produto(models.Model):
-    imported = models.BooleanField('Importação')
+    imported = models.BooleanField('Importado')
     name = models.CharField('Nome', max_length=100)
     ncm = models.CharField('NCM', max_length=8)
     price = models.DecimalField('Preço', max_digits=7, decimal_places=2)

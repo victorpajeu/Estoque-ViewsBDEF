@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # my_apps
     'core',
     'produto',
+    'estoque',
 ]
 
 MIDDLEWARE = [
